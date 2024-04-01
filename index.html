@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/timer.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/fe42810215.js" crossorigin="anonymous"></script>
+
+    <title>BODA: Alberto & Abi</title>
+</head>
+
+<body class="bg-[#F1EEDC]">
+    <header class="bg-gray-100 h-screen header-image flex items-center justify-center">
+        <div class="text-center px-4 mx-auto max-w-screen-xl lg:px-6 flex flex-col gap-10">
+            <p class="great-font text-[#E07A5F] text-6xl md:text-9xl">
+                Alberto
+                <br>& Abigail
+                <hr class="mt-[-2rem]">
+                <span class="text-white text-2xl inter-font uppercase">
+                    4 mayo 2024
+                    <!-- 4<i class="fa-brands fa-pagelines text-[#E5DDC5] text-[1.2rem] mx-1"></i> mayo <i
+                        class="fa-brands fa-pagelines text-[#E5DDC5] text-[1.2rem] mx-1"></i> 2024 -->
+                </span>
+            </p>
+            <h1 class="text-white text-4xl great-font">
+                <!-- Te invitamos a nuestra boda, -->
+                Un momento que nunca olvidaremos
+            </h1>
+
+            <div>
+                <span class="text-white uppercase text-xl">faltan:</span>
+                <div id="timer">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class=" mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 inter-font">
+            <div class=" p-4 flex flex-col md:flex-row justify-between gap-6">
+                <div class="">
+                    <img src="/public/images/invitacion2.JPEG" alt="" class="md:h-[40rem]">
+                </div>
+                <div class="flex flex-col gap-4 items-center content-center md:w-1/2">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-semibold text-2xl">
+                            <i class="fa-brands fa-pagelines text-[#E07A5F] text-[1.5rem] mx-1"></i>
+                            Te invitamos a nuestra boda.
+                        </h2>
+                        <p class="text-xl">
+                            Te invitamos a formar parte de este gran dia que es nuestra boda, para nosotros sera un
+                            placer
+                            tenerte como uno mas de nuestros invitados especiales.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-black text-center">
+                        <!-- item 1 -->
+                        <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                            <div class="flex flex-col gap-6 items-center content-center">
+                                <i class="fa-regular fa-clock text-3xl text-[#E07A5F]"></i>
+                                <p class="uppercase font-bold">Hora</p>
+                                <p>
+                                    <!-- <i class="fa-regular fa-calendar-days"></i> -->
+                                    Inicio: 7:00 pm
+                                </p>
+                                <p>
+                                    Salida: 1:00 am
+                                </p>
+                            </div>
+                        </div>
+                        <!-- item 1 -->
+                        <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                            <div class="flex flex-col gap-6 items-center content-center">
+                                <i class="fa-regular fa-calendar-days text-3xl text-[#E07A5F]"></i>
+                                <p class="uppercase font-bold">donde y cuando</p>
+                                <p>
+                                    <!-- <i class="fa-regular fa-calendar-days"></i> -->
+                                    Sabado 4 de mayo de 2024
+                                </p>
+                                <p>
+                                    <!-- <i class="fa-solid fa-location-dot"></i> -->
+                                    C. Río de las Cañas 1430, Nueva 18 de
+                                    Marzo,
+                                    21379 Mexicali, B.C.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                            <div class="flex flex-col gap-6 items-center content-center">
+                                <i class="fa-solid fa-music text-3xl text-[#E07A5F]"></i>
+                                <p class="uppercase font-bold">Musica</p>
+                                <p>
+                                    Grupo invitado:
+                                </p>
+                                <p>
+                                    <a href="https://www.instagram.com/grupo_sabor_tropical/?hl=es" target="_blank">
+                                        <i class="fa-brands fa-instagram text-xl text-[#F50057]"></i>
+                                        <span>Grupo Sabor Tropical</span>
+                                    </a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MAPA -->
+            <div class="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.477027410002!2d-115.41881065470571!3d32.61441101907793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d771212cce3b8f%3A0xb61e479b9591a3cd!2sArya%20Jard%C3%ADn%20de%20Eventos!5e0!3m2!1ses-419!2smx!4v1712002135545!5m2!1ses-419!2smx"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <!-- item 1 -->
+                <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                    <div class="flex flex-col gap-6 items-center content-center">
+                        <i class="fa-solid fa-vest text-3xl text-[#E07A5F]"></i>
+                        <p class="uppercase font-bold">vestimenta</p>
+                        <p>
+                            Sientete con la libertad de vestir con lo que mas agusto te sientas pero <span
+                                class="font-bold underline">no usar
+                                colores rosas y/o blancos</span> por favor
+                        </p>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                    <div class="flex flex-col gap-6 items-center content-center">
+                        <i class="fa-solid fa-gifts text-3xl text-[#E07A5F]"></i>
+                        <p class="uppercase font-bold">regalos</p>
+                        <p>
+                            Nuestro hogar ya cuenta con todo lo necesario para nosotros pero agradeceremos mucho que su
+                            <span class="font-bold underline">obsequio sea en efectivo</span> por favor.
+                        </p>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="bg-white flex flex-col items-center content-center p-5 rounded-md">
+                    <div class="flex flex-col gap-6 items-center content-center">
+                        <i class="fa-solid fa-car text-3xl text-[#E07A5F]"></i>
+                        <p class="uppercase font-bold">estacionamiento</p>
+                        <p>
+                            El jardin cuenta con un estacionamiento pero es limitado por lo cual lo invitamos a llegar
+                            temprano.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="h-[50rem] flex items-center justify-center mt-16 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 mb-[5rem] cta-image">
+            <div class="">
+                <h2 class="great-font text-white text-5xl underline">
+                    Te esperamos en nuestra boda!
+                </h2>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="/public/js/timer.js"></script>
+</body>
+
+</html>

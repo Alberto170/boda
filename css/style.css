@@ -1,0 +1,45 @@
+img {
+    max-width: 100%;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.lora-font {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.great-font {
+    font-family: "Great Vibes", cursive;
+    /* font-weight: ; */
+    font-style: normal;
+}
+
+.header-image {
+    background-image: linear-gradient(45deg,
+            rgba(26, 26, 26, 0.9),
+            rgba(26, 26, 26, 0.9)),
+        url("../public/images/portada.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta-image {
+    background-image: linear-gradient(45deg,
+            rgba(26, 26, 26, 0.9),
+            rgba(26, 26, 26, 0.9)),
+        url("../public/images/invitacion4.JPEG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

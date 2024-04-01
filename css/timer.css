@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+
+
+#timer {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-family: $font; */
+    font-size: .7em;
+    /* letter-spacing: 5px;
+    margin-top: 25%; */
+}
+
+.detail {}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    color: white;
+}
+
+.numbers {
+    font-size: 4em;
+}
