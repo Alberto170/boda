@@ -2293,6 +2293,10 @@ video {
   color: rgb(245 0 87 / var(--tw-text-opacity));
 }
 
+.text-\[\#\#E07A5F\] {
+  color: ##E07A5F;
+}
+
 .underline {
   text-decoration-line: underline;
 }
